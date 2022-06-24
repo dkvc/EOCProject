@@ -51,7 +51,7 @@ Helper Methods used for Main Methods of Changing the Interface
 | remainder                | Dividend (int), Divisior (int) | Integer            | Returns the Remainder of given values             |
 
 
-## Logic - Checking the Conditions
+## Logical Methods - Checking the Conditions
 
 Main Logic to check if the player is won or game is draw.
 

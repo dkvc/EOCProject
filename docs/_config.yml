@@ -2,3 +2,7 @@
 title: EOC Project
 
 remote_theme: just-the-docs/just-the-docs
+
+aux_links:
+  "Repository on Github":
+    - "//https://github.com/dkvc/EOCProject/"

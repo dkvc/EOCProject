@@ -10,6 +10,7 @@ Tic Tac Toe (also known as Xs and Os) is a game in which two players take turns 
 # Implementation in this Project
 ## Class Name: TicTacToe
 ## Fields
+<div class="code-example" markdown="1">
 | Name          | Data Type         | Description                         |
 |:--------------|:------------------|-------------------------------------|
 | Board         | Array of Arrays   | Stores the values in the board      |
@@ -18,6 +19,7 @@ Tic Tac Toe (also known as Xs and Os) is a game in which two players take turns 
 | blank (" ")   | String            | Blank String for comparing          |
 | X ("X")       | String            | String Letter "X" for comparing     |    
 | O ("O")       | String            | String Letter "O" for comparing     |
+</div>
 
 ## Methods - User Interface
 <div class="code-example" markdown="1">
@@ -60,4 +62,4 @@ Main Logic to check if the player is won or game is draw.
 |:-------------------------|:-------------------------------|--------------------|---------------------------------------------------|
 | checkIfWon               | Void                           | Boolean            | Check if the player is won                        |
 | checkIfDraw              | Void                           | Boolean            | Check if the game is draw                         |
-
+</div>

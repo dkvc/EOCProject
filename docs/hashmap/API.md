@@ -8,6 +8,7 @@ parent: HashMap
 ## Class Name: HashMap
 
 ## Fields
+
 | Name          | Data Type         | Description                         |
 |:--------------|:------------------|-------------------------------------|
 | arr1          | Array of Integers | Stores keys                         |
@@ -17,6 +18,7 @@ parent: HashMap
 
 
 ## Methods
+
 | Name          | Parameters                     | Return Type      | Description                                               |
 |:--------------|:-------------------------------|------------------|-----------------------------------------------------------|
 | constructor   | None                           | Object (HashMap) | Creates an instance of class                              |

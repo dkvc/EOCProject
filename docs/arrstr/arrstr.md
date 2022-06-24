@@ -5,4 +5,4 @@ has_children: true
 title: Arrays (String)
 ---
 
-# Arrays\<String\>
+# **Arrays\<String\>**

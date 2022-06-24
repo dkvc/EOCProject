@@ -78,7 +78,7 @@ class Arrays {
         let min = arr[0];
         let i = 0;
         while (i < size) {
-            if (arr[i] < min) {
+            if (arr[i] < min & (~(arr[i] = 0))) {
                 let min = arr[i];
             }
             let i = i + 1;

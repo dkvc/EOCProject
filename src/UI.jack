@@ -7,7 +7,7 @@ class UI {
             do Screen.clearScreen();
             do Output.moveCursor(0, 0);
 
-            do Output.printString("Enter the class you want to call: ");
+            do Output.printString("Enter the class you want to test: ");
             do Output.println();
             do Output.printString("1. Tic Tac Toe");
             do Output.println();
@@ -23,6 +23,7 @@ class UI {
             do Output.println();
             do Output.printString("7. Exit");
             do Output.println();
+            do Output.println();
 
             let option = Keyboard.readInt("Enter your option: ");
             
@@ -32,6 +33,41 @@ class UI {
             }
 
             if (option = 6) {
+                do Output.printString("Testing Stack...");
+                do Sys.wait(1500);
+                do StackTest.test();
+                do Sys.halt();
+            }
+
+            if (option = 5) {
+                do Output.printString("Testing Arrays (String)...");
+                do Sys.wait(1500);
+                do ArraysStringTest.test();
+                do Sys.halt();
+            }
+
+            if (option = 4) {
+                do Output.printString("Testing Arrays (Integer)...");
+                do Sys.wait(1500);
+                do ArraysTest.test();
+                do Sys.halt();
+            }
+
+            if (option = 3) {
+                do Output.printString("Testing String Extended Library...");
+                do Sys.wait(1500);
+                do StringsTest.test();
+                do Sys.halt();
+            }
+
+            if (option = 2) {
+                do Output.printString("Testing HashMap...");
+                do Sys.wait(1500);
+                do HashMapTest.test();
+                do Sys.halt();
+            }
+
+            if (option = 1) {
                 let tictactoe = TicTacToe.new();
                 do tictactoe.UI();
             }

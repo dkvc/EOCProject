@@ -1,0 +1,116 @@
+class ArraysTest {
+    function void test() {
+        var Arrays arr;
+
+        do Screen.clearScreen();
+        do Output.moveCursor(0, 0);
+
+        // Create an array of length 6
+        do Output.printString("Creating an array of length 6...");
+        let arr = Arrays.new(6);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Add 2 to the array
+        do Output.printString("Adding 2 to the array...");
+        do arr.add(0, 2);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Add 5 to the array at index 2
+        do Output.printString("Adding 5 to the array at index 2...");
+        do arr.add(2, 5);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Add 3 to the array at index 4
+        do Output.printString("Adding 3 to the array at index 4...");
+        do arr.add(4, 3);
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+        
+        // Get the value at index 2
+        do Output.printString("Value at index 2: ");
+        do Output.printInt(arr.get(2));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Get the value at index 4
+        do Output.printString("Value at index 4: ");
+        do Output.printInt(arr.get(4));
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+        
+        // Remove the value at index 2
+        do Output.printString("Removing the value at index 2...");
+        do arr.remove(2);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Remove the value at index 1
+        do Output.printString("Removing the value at index 1...");
+        do arr.remove(1);
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+        
+        // Check if the array contains the value 3
+        do Output.printString("Does the array contain the value 3? ");
+        if (arr.contains(3)) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Add the value 69 at index 3
+        do Output.printString("Adding the value 69 at index 3...");
+        do arr.add(3, 69);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Check if the array contains the value 69
+        do Output.printString("Does the array contain the value 69? ");
+        if (arr.contains(69)) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Size of the array
+        do Output.printString("Size of the array: ");
+        do Output.printInt(arr.size());
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Minimum value in the array
+        do Output.printString("Minimum value in the array: ");
+        do Output.printInt(arr.min());
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Maximum value in the array
+        do Output.printString("Maximum value in the array: ");
+        do Output.printInt(arr.max());
+        return;
+    }
+}

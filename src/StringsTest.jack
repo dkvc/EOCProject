@@ -1,0 +1,117 @@
+class StringsTest {
+    function void test() {
+        do Screen.clearScreen();
+        do Output.moveCursor(0, 0);
+        
+        // Checking substring function
+        // Checking Substring (0, 2) of "Hello World"
+        do Output.printString("Substring (0, 2) of \"Hello World\" is ");
+        do Output.printString(StringsExtended.substring("Hello World", 0, 2));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Checking Substring (2, 5) of "Hello World"
+        do Output.printString("Substring (2, 5) of \"Hello World\" is ");
+        do Output.printString(StringsExtended.substring("Hello World", 2, 5));
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Checking Length of "Jack"
+        do Output.printString("Length of \"Jack\" is ");
+        do Output.printInt(StringsExtended.strlen("Jack")); 
+
+        do Sys.wait(1000);
+        do Output.println();  
+
+        // Checking Length of "Python"
+        do Output.printString("Length of \"Python\" is ");
+        do Output.printInt(StringsExtended.strlen("Python"));    
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Checking if "Jack" is equal to "Java"
+        do Output.printString("Is \"Jack\" equal to \"Java\"? ");
+        if (StringsExtended.strEquals("Jack", "Java")) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Checking if "Jack" is equal to "Jack"
+        do Output.printString("Is \"Jack\" equal to \"Jack\"? ");
+        if (StringsExtended.strEquals("Jack", "Jack")) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Count number of "c" in "TicTacToe"
+        do Output.printString("Count number of \"c\" in \"TicTacToe\" is ");
+        do Output.printInt(StringsExtended.count("TicTacToe", "c"));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Count number of "w" in "Jack"
+        do Output.printString("Count number of \"w\" in \"Jack\" is ");
+        do Output.printInt(StringsExtended.count("Jack", "w"));
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Convert "Coding" to upper case
+        do Output.printString("Convert \"Coding\" to upper case: ");
+        do Output.printString(StringsExtended.toUpperCase("Coding"));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Convert "lowercase" to upper case
+        do Output.printString("Convert \"lowercase\" to upper case: ");
+        do Output.printString(StringsExtended.toUpperCase("lowercase"));
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Convert "StringsTest" to lower case
+        do Output.printString("Convert \"StringsTest\" to lower case: ");
+        do Output.printString(StringsExtended.toLowerCase("StringsTest"));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Convert "helloWoRLD 72" to lower case
+        do Output.printString("Convert \"helloWoRLD 72\" to lower case: ");
+        do Output.printString(StringsExtended.toLowerCase("helloWoRLD 72"));
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Convert "Hello World" to title case
+        do Output.printString("Convert \"Hello World\" to title case: ");
+        do Output.printString(StringsExtended.toTitleCase("Hello World"));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Convert "system failure" to title case
+        do Output.printString("Convert \"system failure\" to title case: ");
+        do Output.printString(StringsExtended.toTitleCase("system failure"));
+        return;
+    }
+}

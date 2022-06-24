@@ -81,13 +81,13 @@ class TicTacToe {
 
 
     method void UI() {
-        var bool done, validMove;
+        var bool validMove;
         var int input;
+        var int opt;
         
-        let done = false;
         let validMove = true;
 
-        while (~(done)) {
+        while (true) {
             do drawBoard();
             do Output.println();
             do Output.println();

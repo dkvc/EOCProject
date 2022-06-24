@@ -1,0 +1,161 @@
+class HashMapTest {
+    function void test() {
+        var HashMap map;
+        var int value;
+
+        do Screen.clearScreen();
+        do Output.moveCursor(0, 0);
+
+        // Create a new HashMap of size 5
+        do Output.printString("Creating a new HashMap of size 5...");
+        let map = HashMap.new(5);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Put (2, 4)
+        do Output.printString("Putting (2, 4) into the map...");
+        do map.put(2, 4);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Put (4, 16)
+        do Output.printString("Putting (4, 16) into the map...");
+        do map.put(4, 16);
+
+        do Output.println();
+
+        // Put (6, 36)
+        do Output.printString("Putting (6, 36) into the map...");
+        do map.put(6, 36);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Get value of 6
+        do Output.printString("Getting value of 6... - Value: ");
+        do Output.printInt(map.get(6));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Get value of 2
+        do Output.printString("Getting value of 2... - Value: ");
+        do Output.printInt(map.get(2));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Size
+        do Output.printString("Size of the map: ");
+        do Output.printInt(map.size());
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Remove Key 4
+        do Output.printString("Removing Key 4 from the map...");
+        do map.removeKey(4);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Contains Key 4
+        do Output.printString("Contains Key 4? ");
+        if (map.containsKey(4)) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Contains Value 25
+        do Output.printString("Contains Value 25? ");
+        if (map.containsValue(25)) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Put (8, 64) into the map
+        do Output.printString("Putting (8, 64) into the map...");
+        do map.put(8, 64);
+
+        do Sys.wait(1000);
+        do Output.println();
+        
+        // Put (10, 100) into the map
+        do Output.printString("Putting (10, 100) into the map...");
+        do map.put(10, 100);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // isFull
+        do Output.printString("Is the map full? ");
+        if (map.isFull()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // isEmpty
+        do Output.printString("Is the map empty? ");
+        if (map.isEmpty()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Put (12, 144) into the map
+        do Output.printString("Putting (12, 144) into the map...");
+        do map.put(12, 144);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // isFull
+        do Output.printString("Is the map full? ");
+        if (map.isFull()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Clear the map
+        do Output.printString("Clearing the map...");
+        do map.clear();
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // isEmpty
+        do Output.printString("Is the map empty? ");
+        if (map.isEmpty()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        return;
+    }
+}

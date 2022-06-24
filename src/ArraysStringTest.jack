@@ -1,0 +1,103 @@
+class ArraysStringTest {
+    function void test() {
+        var ArraysString arr;
+
+        do Screen.clearScreen();
+        do Output.moveCursor(0, 0);
+
+        // Create an array of length 6
+        do Output.printString("Creating an array of length 6...");
+        let arr = ArraysString.new(6);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Add "Total" to the array
+        do Output.printString("Adding \"Total\" to the array...");
+        do arr.add(0, "Total");
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Add "Stack" to the array at index 2
+        do Output.printString("Adding \"Stack\" to the array at index 2...");
+        do arr.add(2, "Stack");
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Add "Explorer" to the array at index 4
+        do Output.printString("Adding \"Explorer\" to the array at index 4...");
+        do arr.add(4, "Explorer");
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+        
+        // Get the value at index 2
+        do Output.printString("Value at index 2: ");
+        do Output.printString(arr.get(2));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Get the value at index 4
+        do Output.printString("Value at index 4: ");
+        do Output.printString(arr.get(4));
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+        
+        // Remove the value at index 2
+        do Output.printString("Removing the value at index 2...");
+        do arr.remove(2);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Remove the value at index 1
+        do Output.printString("Removing the value at index 1...");
+        do arr.remove(1);
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Size of the array
+        do Output.printString("Size of the array: ");
+        do Output.printInt(arr.size());
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Get the value at index 2
+        do Output.printString("Value at index 2: ");
+        do Output.printString(arr.get(2));
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Get the value at index 4
+        do Output.printString("Value at index 4: ");
+        do Output.printString(arr.get(4));
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Add "Total" to the array at index 3
+        do Output.printString("Adding \"Total\" to the array at index 3...");
+        do arr.add(3, "Total");
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Get the value at index 3
+        do Output.printString("Value at index 3: ");
+        do Output.printString(arr.get(3));
+
+        return;
+    }
+}

@@ -1,0 +1,157 @@
+class StackTest {
+    function void test() {
+        var Stack stack;
+        var int value;
+
+        do Screen.clearScreen();
+        do Output.moveCursor(0, 0);
+
+        // Create Stack of size 5
+        do Output.printString("Creating stack of size 5...");
+        let stack = Stack.new(5);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Push 3
+        do Output.printString("Pushing 3 to stack...");
+        do stack.push(3);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Push 69
+        do Output.printString("Pushing 69 to stack...");
+        do stack.push(69);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Push -1
+        do Output.printString("Pushing -1 to stack...");
+        do stack.push(-1);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Pop -1
+        do Output.printString("Popping from stack...");
+        let value = stack.pop();
+        do Output.printString(" = Value: ");
+        do Output.printInt(value);
+
+        do Sys.wait(1000);
+        do Output.println();
+        
+        // Peek at top of stack
+        do Output.printString("Peeking at top of stack...");
+        let value = stack.peek();
+        do Output.printString(" = Peeked: ");
+        do Output.printInt(value);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Pop 69
+        do Output.printString("Popping from stack...");
+        let value = stack.pop();
+        do Output.printString(" = Value: ");
+        do Output.printInt(value);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Size
+        do Output.printString("Size of stack: ");
+        do Output.printInt(stack.size());
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // isFull
+        do Output.printString("Is stack full? ");
+        if (stack.isFull()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Push 125
+        do Output.printString("Pushing 125 to stack...");
+        do stack.push(125);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Push -2
+        do Output.printString("Pushing -2 to stack...");
+        do stack.push(-2);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Push -3
+        do Output.printString("Pushing -3 to stack...");
+        do stack.push(-3);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // Push 7200
+        do Output.printString("Pushing 7200 to stack...");
+        do stack.push(7200);
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // isFull
+        do Output.printString("Is stack full? ");
+        if (stack.isFull()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+
+        // isEmpty
+        do Output.printString("Is stack empty? ");
+        if (stack.isEmpty()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        do Sys.wait(1000);
+        do Output.println();
+        do Output.println();
+
+        // Popping all elements from stack
+        do Output.printString("Popping all elements from stack...");
+        do stack.pop();
+        do stack.pop();
+        do stack.pop();
+        do stack.pop();
+        do stack.pop();
+
+
+        do Sys.wait(1500);
+        do Output.println();
+
+
+        // isEmpty
+        do Output.printString("Is stack empty? ");
+        if (stack.isEmpty()) {
+            do Output.printString("Yes");
+        } else {
+            do Output.printString("No");
+        }
+
+        return;
+    }
+}

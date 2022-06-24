@@ -29,8 +29,8 @@ class StringsExtended {
             return false;
         }
 
-        let arr1 = Strings.toCharArray(str1);
-        let arr2 = Strings.toCharArray(str2);
+        let arr1 = StringsExtended.toCharArray(str1);
+        let arr2 = StringsExtended.toCharArray(str2);
         let i = 0;
         while (i < str1.length()) {
             if (~(arr1[i] = arr2[i])) {
@@ -42,14 +42,14 @@ class StringsExtended {
         return true;
     }
 
-    function ArraysString toCharArray(String str) {
-        var ArraysString array;
+    function Array toCharArray(String str) {
+        var Array array;
         var int i;
         
-        let array = ArraysString.new(str.length());
+        let array = Array.new(str.length());
         let i = 0;
         while (i < str.length()) {
-            do array.add(i, str.charAt(i));
+            let array[i] = str.charAt(i);
             let i = i + 1;
         }
 

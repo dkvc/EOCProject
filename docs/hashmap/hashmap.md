@@ -5,4 +5,4 @@ has_children: true
 title: HashMap
 ---
 
-# HashMap\<Integer\>
+# **HashMap\<Integer\>**

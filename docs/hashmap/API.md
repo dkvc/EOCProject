@@ -21,7 +21,7 @@ parent: HashMap
 
 | Name          | Parameters                     | Return Type      | Description                                               |
 |:--------------|:-------------------------------|------------------|-----------------------------------------------------------|
-| constructor   | None                           | Object (HashMap) | Creates an instance of class                              |
+| constructor   | None                           | Object (HashMap) | Creates an instance of class HashMap                      |
 | put           | Key (Integer), Value (Integer) | Void             | Stores key & its value to map                             |
 | get           | Key (Integer)                  | Integer          | Gets corresponding value for key from map                 |
 | size          | None                           | Integer          | Returns the size of map                                   |

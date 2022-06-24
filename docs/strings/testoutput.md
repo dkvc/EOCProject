@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 2
-parent: HashMap
+parent: Strings (Extended)
 ---
 
 # Test Output

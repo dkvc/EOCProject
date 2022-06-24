@@ -10,7 +10,7 @@ Tic Tac Toe (also known as Xs and Os) is a game in which two players take turns 
 # Implementation in this Project
 ## Class Name: TicTacToe
 ## Fields
-<div class="code-example" markdown="1">
+
 | Name          | Data Type         | Description                         |
 |:--------------|:------------------|-------------------------------------|
 | Board         | Array of Arrays   | Stores the values in the board      |
@@ -19,10 +19,9 @@ Tic Tac Toe (also known as Xs and Os) is a game in which two players take turns 
 | blank (" ")   | String            | Blank String for comparing          |
 | X ("X")       | String            | String Letter "X" for comparing     |    
 | O ("O")       | String            | String Letter "O" for comparing     |
-</div>
+
 
 ## Methods - User Interface
-<div class="code-example" markdown="1">
 Methods used for creating the User Interface
 
 | Name                     | Parameters     | Return Type        | Description                                       |
@@ -30,10 +29,9 @@ Methods used for creating the User Interface
 | TicTacToe (Constructor)  | None           | Object (TicTacToe) | Creates an instance of class                      |
 | drawBoard                | None           | Void               | Draws the Tic Tac Toe Grid                        |
 | UI                       | None           | Void               | Draws the Interface for Input & Grid              |
-</div>
+
 
 ## Methods - Change Interface
-<div class="code-example" markdown="1">
 Methods used for changing the User Interface
 
 | Name                     | Parameters                     | Return Type        | Description                                       |
@@ -41,10 +39,9 @@ Methods used for changing the User Interface
 | changeCurrentPlayer      | None                           | Void               | Changes the Current Player & value                |
 | setX                     | Position (int)                 | Void               | Changes Value from blank to X at given position   |
 | setO                     | Position (int)                 | Void               | Changes Value from blank to O at given position   |
-</div>
+
 
 ## Methods - Helpher Methods for Changing the Interface
-<div class="code-example" markdown="1">
 Helper Methods used for Main Methods of Changing the Interface
 
 | Name                     | Parameters                     | Return Type        | Description                                       |
@@ -52,14 +49,13 @@ Helper Methods used for Main Methods of Changing the Interface
 | currentValue             | Position (int)                 | String             | Returns the corresponding value at given position |
 | setValue                 | Position (int), Value (String) | Void               | Sets the given value at given position            |
 | remainder                | Dividend (int), Divisior (int) | Integer            | Returns the Remainder of given values             |
-</div>
+
 
 ## Logic - Checking the Conditions
-<div class="code-example" markdown="1">
+
 Main Logic to check if the player is won or game is draw.
 
 | Name                     | Parameters                     | Return Type        | Description                                       |
 |:-------------------------|:-------------------------------|--------------------|---------------------------------------------------|
 | checkIfWon               | Void                           | Boolean            | Check if the player is won                        |
 | checkIfDraw              | Void                           | Boolean            | Check if the game is draw                         |
-</div>

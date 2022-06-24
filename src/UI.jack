@@ -1,0 +1,41 @@
+class UI {
+    function void run() {
+        var int option;
+        var TicTacToe tictactoe;
+
+        while (true) {
+            do Screen.clearScreen();
+            do Output.moveCursor(0, 0);
+
+            do Output.printString("Enter the class you want to call: ");
+            do Output.println();
+            do Output.printString("1. Tic Tac Toe");
+            do Output.println();
+            do Output.printString("2. HashMap");
+            do Output.println();
+            do Output.printString("3. String Extended");
+            do Output.println();
+            do Output.printString("4. Arrays (Integer)");
+            do Output.println();
+            do Output.printString("5. Arrays (String)");
+            do Output.println();
+            do Output.printString("6. Stack");
+            do Output.println();
+            do Output.printString("7. Exit");
+            do Output.println();
+
+            let option = Keyboard.readInt("Enter your option: ");
+            
+            if (option = 7) {
+                do Output.printString("Exiting...");
+                do Sys.halt();
+            }
+
+            if (option = 6) {
+                let tictactoe = TicTacToe.new();
+                do tictactoe.UI();
+            }
+        }
+        return;
+    }
+}

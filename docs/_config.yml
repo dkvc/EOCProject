@@ -1,7 +1,8 @@
 #theme: jekyll-theme-cayman
 title: EOC Project
 
-remote_theme: rundocs/jekyll-rtd-theme
+remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
 
 aux_links:
   "Repository on Github":

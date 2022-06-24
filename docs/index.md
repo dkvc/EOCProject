@@ -4,7 +4,7 @@ nav_order: 1
 ---
 # Introduction
 {: .fs-9 }
-EOC Project Group 19 Batch A (2021-25)
+EOC Project Group 19 Batch A (2021-25)<br>
 This wiki describes the Semester 2 Project of subject EOC-II (Elements of Computing Systems II), created by Group 19 of Batch A. 
 {: .fs-6 .fw-300 }
 

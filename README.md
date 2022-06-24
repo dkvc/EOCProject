@@ -75,3 +75,14 @@ This repository describes the Semester 2 Project of subject EOC-II (Elements of 
   * size
   * peek
   * isFull
+
+### Test Classes
+* HashMapTest
+* StringsTest
+* ArraysTest
+* ArraysStringTest
+* StackTest
+
+### Main Classes
+* UI
+* Main

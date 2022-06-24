@@ -2,8 +2,9 @@
 ## EOC Project Group 19 Batch A (2021-25)
 This wiki describes the Semester 2 Project of subject EOC-II (Elements of Computing Systems II), created by Group 19 of Batch A. 
 
-<div class="code-example" markdown="1">
+
 ## Implemented Classes
+<div class="code-example" markdown="1">
 - Tic Tac Toe
 - HashMap\<Integer\>
 - Strings Extended - Extended Library for Strings

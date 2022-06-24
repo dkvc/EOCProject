@@ -17,3 +17,15 @@ This wiki describes the Semester 2 Project of subject EOC-II (Elements of Comput
 - Arrays\<String\> - New Array Library for Strings
 - Stack Data Structure
 </div>
+
+## Extra Classes
+<div class="code-example" markdown="1">
+- Test Classes
+  - HashMapTest 
+  - StringsTest
+  - ArraysTest
+  - ArraysStringTest
+  - StackTest
+- User Interface (UI)
+- Main
+</div>

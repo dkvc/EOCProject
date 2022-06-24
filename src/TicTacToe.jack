@@ -109,9 +109,9 @@ class TicTacToe {
 
             if (validMove) {
                 if (currentPlayer = 1) {
-                    do changeX(input);
+                    do setX(input);
                 } else {
-                    do changeO(input);
+                    do setO(input);
                 }
                 
                 if (checkIfWon()) {
@@ -151,7 +151,7 @@ class TicTacToe {
         return;
     }
 
-    method void changeX(int realPosition) {
+    method void setX(int realPosition) {
         if (currentValue(realPosition) = blank) {
             do setValue(realPosition, X);
             return;
@@ -159,7 +159,7 @@ class TicTacToe {
         return;
     }
 
-    method void changeO(int realPosition) {
+    method void setO(int realPosition) {
         
         if (currentValue(realPosition) = blank) {
             do setValue(realPosition, O);

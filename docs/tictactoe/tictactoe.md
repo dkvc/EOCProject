@@ -1,6 +1,7 @@
 ---
 layout: default
 nav_order: 2
+has_children: true
 ---
 # **Tic Tac Toe**
 {: .fs-9 }

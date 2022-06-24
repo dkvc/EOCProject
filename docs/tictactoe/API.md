@@ -15,7 +15,7 @@ parent: Tic Tac Toe
 | currentPlayer | Integer           | Who is the current Player?          |
 | currentValue  | String            | What is the current Value? (X or O) |
 | blank (" ")   | String            | Blank String for comparing          |
-| X ("X")       | String            | String Letter "X" for comparing     |    
+| X ("X")       | String            | String Letter "X" for comparing     |
 | O ("O")       | String            | String Letter "O" for comparing     |
 
 

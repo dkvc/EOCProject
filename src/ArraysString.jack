@@ -1,0 +1,44 @@
+class ArraysString {
+    field Array arr;
+    field int size;
+
+    constructor ArraysString new(int len) {
+        let size = len;
+        let arr = Array.new(len);
+        return this;
+    }
+
+    method int size() {
+        return size;
+    }
+
+    method void add(int index, String value) {
+        if (index < 0 | index > (size - 1)) {
+            return;
+        }
+
+        if (value = 0) {
+            return;
+        }
+        
+        let arr[index] = value;
+        return;
+    }
+
+    method String get(int index) {
+        if (index < 0 | index > (size - 1)) {
+            return "";
+        }
+
+        return arr[index];
+    }
+
+    method void remove(int index) {
+        if (index < 0 | index > (size - 1)) {
+            return;
+        }
+
+        let arr[index] = "";
+        return;   
+    }
+}

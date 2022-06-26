@@ -39,7 +39,7 @@ Methods used for changing the User Interface
 | setO                     | Position (int)                 | Void               | Changes Value from blank to O at given position   |
 
 
-## Methods - Helpher Methods for Changing the Interface
+## Methods - Helper Methods for Changing the Interface
 Helper Methods used for Main Methods of Changing the Interface
 
 | Name                     | Parameters                     | Return Type        | Description                                       |

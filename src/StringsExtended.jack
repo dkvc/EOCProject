@@ -20,6 +20,20 @@ class StringsExtended {
     return Memory.peek(str + 1);
   }
 
+  function Array toCharArray(String str) {
+    var Array array;
+    var int i;
+       
+    let array = Array.new(str.length());
+    let i = 0;
+    while (i < str.length()) {
+      let array[i] = str.charAt(i);
+      let i = i + 1;
+    }
+
+    return array;
+  }
+
   function bool strEquals(String str1, String str2) {
         var Array arr1;
         var Array arr2;
@@ -42,25 +56,15 @@ class StringsExtended {
         return true;
     }
 
-    function Array toCharArray(String str) {
-        var Array array;
-        var int i;
-        
-        let array = Array.new(str.length());
-        let i = 0;
-        while (i < str.length()) {
-            let array[i] = str.charAt(i);
-            let i = i + 1;
-        }
-
-        return array;
-    }
-
     function int count(String str, String delim) {
       var int count;
       var int i;
 
       if (str.length() = 0) {
+        return 0;
+      }
+
+      if (delim.length() < 0 | delim.length() > 1) {
         return 0;
       }
 
